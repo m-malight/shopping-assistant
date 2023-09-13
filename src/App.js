@@ -5,7 +5,6 @@ import { gapi } from "gapi-script";
 import detectIntent from "./api/dialogflow";
 import "./App.css";
 
-// const apiKey = "AIzaSyD6Vi41lTqT2nWWc7ZgurGU0Vo0OgzDvU8";
 const Chatbot = () => {
   const [chatHistory, setChatHistory] = useState([]);
   const [userInput, setUserInput] = useState("");
