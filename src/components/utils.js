@@ -3,7 +3,12 @@ import "./component.css";
 import logo from "../logo.svg";
 
 export const Message = ({ text, isUser }) => {
-  return <div className={isUser ? "message-user" : "message-bot"}>{text}</div>;
+  return (
+    <div
+      className={isUser ? "message-user" : "message-bot"}
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
+  );
 };
 
 export const InputBox = ({ onChange, onSubmit, userInput }) => {
